@@ -1,0 +1,70 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+ENV/
+
+# Environment and sensitive keys
+.env
+.env.*
+!.env.example
+!.env.sample
+secrets/
+*.pem
+*.key
+*.token
+credentials.json
+token.json
+data/*token*.json
+data/*cache*.json
+data/cache/
+data/pdf_cache/
+
+# Financial statements and generic files
+*.xlsx
+*.xls
+
+# Generic PDF & CSV ignore, with explicit whitelist for portfolio data
+*.pdf
+*.csv
+data/*.json
+
+# Whitelisted Portfolio Statements, Tradebooks & Configurations
+!data/.gitkeep
+!data/provident_fund/**
+!data/superannuation/**
+!data/ppf/**
+!data/statements/**
+!data/tradebooks/**
+!data/reit_payouts.json
+!data/nps_baseline.json
+!data/nps_transactions.json
+!data/nps_overrides.json
+!data/sgb_transactions_master.tsv
+!data/gratuity.json
+!data/insurance.json
+!data/cash_reserves.json
+!data/reit_disclosures.json
+!data/quarterly_results_overrides.json
+!data/historical_dividends.json
+
+# SQLite and local database
+*.db
+data/*.db
+
+# Logs and debug
+logs/
+*.log
+
+# IDE & OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+!data/indmoney/**
+!data/paasa/**
